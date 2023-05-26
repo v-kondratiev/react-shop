@@ -3,6 +3,7 @@ const Carousel = () => {
     return (
         <section className={style.Carousel}>
             carousel
+            carousel
 
         </section>
     )

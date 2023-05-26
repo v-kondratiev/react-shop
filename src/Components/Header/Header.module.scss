@@ -1,0 +1,60 @@
+.Header {
+  position: sticky;
+  top: 0;
+  z-index: 1;
+
+
+  .container {
+    margin: auto;
+    max-width: 1274px;
+
+
+    .header_top_row {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 10px 40px;
+
+      .search_box {
+        display: flex;
+        position: relative;
+        width: 300px;
+        height: 27px;
+        text-align: center;
+        background: #191919;
+        border-radius: 6px;
+        font-weight: 400;
+        color: #B8B8B8;
+
+        input {
+          position: absolute;
+          text-align: center;
+
+
+
+        }
+
+        button {
+          position: absolute;
+
+
+
+        }
+      }
+
+      .icon_group {
+        display: flex;
+        gap: 25px;
+
+
+      }
+
+    }
+
+  }
+
+
+
+
+
+}

@@ -1,5 +1,5 @@
 import style from "./Navigation.module.css"
-const Navigation = () => {
+const Navigation = (props) => {
     return (
         <nav className={style.Navigation}>
             Menu

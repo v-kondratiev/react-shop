@@ -1,0 +1,19 @@
+.BestSellers {
+  margin-top: 20px;
+}
+.BestSellers .container {
+  margin: auto;
+  max-width: 1274px;
+  min-height: 378px;
+  background: #191919;
+  border-radius: 6px;
+}
+.BestSellers .container .BestSellers_title h3 {
+  padding: 20px 0 25px;
+  text-align: center;
+  font-weight: 600;
+  font-size: 20px;
+  color: #FFFFFF;
+}
+
+/*# sourceMappingURL=BestSellers.module.css.map */

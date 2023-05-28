@@ -3,13 +3,20 @@ import './App.css';
 import Header from "./Header/Header";
 import Home from "./Home/Home";
 import BestSellers from "./BestSellers/BestSellers";
+import Product from "./Product/Product";
+import {Route, Routes} from "react-router-dom";
 
-function App(props) {
+function App() {
+
     return (
         <div className="App">
             <Header />
-            <Home linksToProps={props.data.categories.links}/>
-            <BestSellers/>
+            <Routes>
+                <Route path="/" element={<Home/>}/>
+                <BestSellers/>
+                <Product/>
+            </Routes>
+
 
         </div>
     );

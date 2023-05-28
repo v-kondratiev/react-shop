@@ -2,12 +2,11 @@
   position: sticky;
   top: 0;
   z-index: 1;
-
+  background: #5585b5;
 
   .container {
     margin: auto;
     max-width: 1274px;
-
 
     .header_top_row {
       display: flex;
@@ -21,7 +20,7 @@
         width: 300px;
         height: 27px;
         text-align: center;
-        background: #191919;
+        background: #bbe4e9;
         border-radius: 6px;
         font-weight: 400;
         color: #B8B8B8;
@@ -29,32 +28,17 @@
         input {
           position: absolute;
           text-align: center;
-
-
-
         }
 
         button {
           position: absolute;
-
-
-
         }
       }
 
       .icon_group {
         display: flex;
         gap: 25px;
-
-
       }
-
     }
-
   }
-
-
-
-
-
 }

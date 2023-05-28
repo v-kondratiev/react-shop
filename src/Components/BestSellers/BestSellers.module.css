@@ -1,11 +1,15 @@
+@charset "UTF-8";
 .BestSellers {
   margin-top: 20px;
+  /* При наведении на карточку - меняем цвет тени */
+  /* Контейнер для картинки */
+  /* При наведении - увеличиваем картинку */
+  /* Размещаем скидку на товар относительно изображения */
 }
 .BestSellers .container {
   margin: auto;
   max-width: 1274px;
-  min-height: 378px;
-  background: #191919;
+  background: #53a8b6;
   border-radius: 6px;
 }
 .BestSellers .container .BestSellers_title h3 {
@@ -14,6 +18,156 @@
   font-weight: 600;
   font-size: 20px;
   color: #FFFFFF;
+}
+.BestSellers .products {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 30px;
+  justify-content: space-between;
+}
+.BestSellers .card {
+  width: 225px;
+  margin-top: 30px;
+  padding: 20px;
+  min-height: 350px;
+  box-shadow: 1px 2px 4px rgba(0, 0, 0, 0.1);
+  display: flex;
+  flex-direction: column;
+  border-radius: 4px;
+  transition: 0.2s;
+  position: relative;
+  background-color: #fcfcfc;
+}
+.BestSellers .card:hover {
+  box-shadow: 4px 8px 16px rgb(106, 106, 106);
+}
+.BestSellers .card__top {
+  flex: 0 0 220px; /* Задаем высоту 220px, запрещаем расширение и сужение по высоте */
+  position: relative;
+  overflow: hidden;
+}
+.BestSellers .card__image {
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+.BestSellers .card__image > img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain; /* Встраиваем картинку в контейнер card__image */
+  transition: 0.2s;
+}
+.BestSellers .card__image:hover > img {
+  transform: scale(1.1);
+}
+.BestSellers .card__label {
+  padding: 4px 8px;
+  position: absolute;
+  bottom: 10px;
+  left: 10px;
+  background: #ff6633;
+  border-radius: 4px;
+  font-weight: 400;
+  font-size: 16px;
+  color: #fff;
+}
+.BestSellers .card__bottom {
+  display: flex;
+  flex-direction: column;
+  flex: 1 0 auto; /* Занимаем всю оставшуюся высоту карточки */
+  padding: 10px;
+}
+.BestSellers .card__prices {
+  display: flex;
+  margin-bottom: 10px;
+  flex: 0 0 50%; /* Размещаем цены равномерно в две колонки */
+}
+.BestSellers .card__price::after {
+  content: "$";
+  margin-left: 4px;
+  position: relative;
+}
+.BestSellers .discount {
+  font-weight: 700;
+  font-size: 19px;
+  color: #414141;
+  display: flex;
+  flex-wrap: wrap-reverse;
+}
+.BestSellers .discount::before {
+  content: "";
+  font-weight: 400;
+  font-size: 13px;
+  color: #bfbfbf;
+}
+.BestSellers .common {
+  font-weight: 400;
+  font-size: 17px;
+  display: flex;
+  flex-wrap: wrap-reverse;
+  justify-content: flex-end;
+}
+.BestSellers .common::before {
+  content: "";
+  font-weight: 400;
+  font-size: 13px;
+  color: #bfbfbf;
+}
+.BestSellers .card__title {
+  display: block;
+  margin-bottom: 10px;
+  font-weight: 400;
+  font-size: 17px;
+  line-height: 150%;
+  color: #414141;
+}
+.BestSellers .card__title:hover {
+  color: #ff6633;
+}
+.BestSellers .card__add {
+  display: block;
+  width: 100%;
+  font-weight: 400;
+  font-size: 17px;
+  color: #70c05b;
+  padding: 10px;
+  text-align: center;
+  border: 1px solid #70c05b;
+  border-radius: 4px;
+  cursor: pointer; /* Меняем курсор при наведении */
+  transition: 0.2s;
+  margin-top: auto; /* Прижимаем кнопку к низу карточки */
+}
+.BestSellers .card__add:hover {
+  border: 1px solid #ff6633;
+  background-color: #ff6633;
+  color: #fff;
+}
+.BestSellers .Bestsellers__btn {
+  display: flex;
+  justify-content: center;
+  margin-top: 60px;
+}
+.BestSellers .btn {
+  height: 50px;
+  padding: 12px 80px;
+  margin-bottom: 30px;
+  font-size: 16px;
+  color: #FFFFFF;
+  font-weight: 700;
+  text-align: center;
+  background: rgba(255, 255, 255, 0.2);
+}
+.BestSellers .btn:hover {
+  transition: color 0.2s ease-in;
+}
+.BestSellers .btn:active {
+  position: relative;
+  top: 1px;
+  background-color: rgba(255, 255, 255, 0.3);
 }
 
 /*# sourceMappingURL=BestSellers.module.css.map */

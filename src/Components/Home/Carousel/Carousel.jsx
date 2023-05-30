@@ -3,12 +3,9 @@ const Carousel = () => {
     return (
         <section className={style.Carousel}>
             <div className="container">
-
+                CAROUSEL
 
             </div>
-            carousel
-            carousel
-
         </section>
     )
 }

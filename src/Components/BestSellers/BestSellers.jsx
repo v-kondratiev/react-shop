@@ -1,6 +1,7 @@
 import style from "./BestSellers.module.css"
 import {useEffect, useState} from "react";
 import axios from "axios";
+import {useNavigate} from "react-router-dom";
 
 
 // const Products = [
@@ -56,7 +57,8 @@ import axios from "axios";
 //     }
 // ]
 const BestSellers = () => {
-    let [product, setProducts] = useState([])
+    let [product, setProducts] = useState([]);
+    const [visible, setVisible] = useState(5);
 
     useEffect(()=> {
         axios.get('https://fakestoreapi.com/products')
@@ -66,6 +68,16 @@ const BestSellers = () => {
         }
     ,[])
 
+    function ViewMore () {setVisible(prev  => prev +5);
+    }
+
+    const navigate = useNavigate();
+    const ShowMoreHandler = (id) => {
+        navigate(`/product/${id}`)
+
+
+    }
+
     return (
         <section className={style.BestSellers}>
             <div className={style.container}>
@@ -74,7 +86,7 @@ const BestSellers = () => {
                 </div>
                 <div className={style.products}>
                     {
-                        product.map((product) => {
+                        product.slice(0,visible).map((product) => {
                             return (
                                 <div className={style.card}>
                                     <div className={style.card__top}>
@@ -92,7 +104,7 @@ const BestSellers = () => {
                                         <a href="#" className={style.card__title}>
                                             {product.title}
                                         </a>
-                                        <button className={style.card__add}>Add to basket</button>
+                                        <button className={style.card__add} onClick={()=>{ShowMoreHandler(product.id)}}>Add to basket</button>
                                     </div>
                                 </div>
                             )
@@ -100,7 +112,7 @@ const BestSellers = () => {
                     }
                 </div>
                 <div className={style.Bestsellers__btn} >
-                    <button className={style.btn} >View more</button>
+                    <button  className={style.btn} onClick={ViewMore} >View more</button>
                 </div>
             </div>
         </section>

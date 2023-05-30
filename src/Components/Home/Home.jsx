@@ -1,15 +1,18 @@
 import style from "./Home.module.css"
 import Navigation from "./Navigation/Navigation";
 import Carousel from "./Carousel/Carousel";
-import BestSellers from "../BestSellers/BestSellers";
+import {Route, Routes} from "react-router-dom";
+import Product from "../Product/Product";
 
-const Home = (props) => {
+const Home = () => {
     return (
         <section className={style.Home}>
             <div className={style.container}>
                 <Navigation/>
-                <Carousel/>
-
+                <Routes>
+                    <Route path="/" element={<Carousel/>}/>
+                    <Route path="/product/:productId" element={<Product/>}/>
+                </Routes>
             </div>
         </section>
     )

@@ -13,11 +13,9 @@ function App() {
             <Header />
             <Routes>
                 <Route path="/" element={<Home/>}/>
-                <BestSellers/>
-                <Product/>
+                <Route path="/product" element={<Product />}/>
             </Routes>
-
-
+            <BestSellers/>
         </div>
     );
 }

@@ -14,7 +14,7 @@ const Header =() => {
                         </a>
 
                         <div className={style.search_box}>
-                            <input type="text" placeholder="Enter your location"/>
+                            <input type="text" placeholder=""/>
                             <button><img src={magnifying} alt=""/></button>
                         </div>
 

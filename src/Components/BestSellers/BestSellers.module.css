@@ -15,14 +15,14 @@
 .BestSellers .container .BestSellers_title h3 {
   padding: 20px 0 25px;
   text-align: center;
-  font-weight: 600;
-  font-size: 20px;
+  font-weight: 400;
+  font-size: 40px;
   color: #FFFFFF;
 }
 .BestSellers .products {
   display: flex;
   flex-wrap: wrap;
-  padding: 30px;
+  padding: 0 30px;
   justify-content: space-between;
 }
 .BestSellers .card {

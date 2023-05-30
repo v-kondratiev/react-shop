@@ -4,26 +4,37 @@
   padding: 24px;
   background: #53a8b6;
   border-radius: 6px;
+}
+.Navigation .title h2 {
+  font-weight: 400;
+  font-size: 24px;
   color: #FFFFFF;
 }
 .Navigation .nav_menu {
   display: flex;
   flex-direction: column;
 }
-.Navigation .nav_menu .title {
-  font-weight: 600;
-  font-size: 16px;
-}
 .Navigation .nav_menu ul {
   font-weight: 500;
-  font-size: 14px;
+  font-size: 18px;
 }
 .Navigation .nav_menu ul li {
   padding-top: 12px;
+  color: #FFFFFF;
+}
+.Navigation .nav_menu ul li a {
+  color: #FFFFFF;
 }
 .Navigation .nav_menu .information {
   display: flex;
   justify-content: space-between;
+  margin-top: 130px;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 15px;
+}
+.Navigation .nav_menu .information a {
+  color: #FFFFFF;
 }
 
 /*# sourceMappingURL=Navigation.module.css.map */

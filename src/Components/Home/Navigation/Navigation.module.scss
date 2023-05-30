@@ -4,31 +4,47 @@
   padding: 24px;
   background: #53a8b6;
   border-radius: 6px;
-  color: #FFFFFF;
+
+  .title {
+    h2 {
+      font-weight: 400;
+      font-size: 24px;
+      color: #FFFFFF;
+    }
+
+  }
+
 
   .nav_menu {
     display: flex;
     flex-direction: column;
 
-
-    .title {
-      font-weight: 600;
-      font-size: 16px;
-    }
-
     ul {
-      //margin-top: 32px;
+
       font-weight: 500;
-      font-size: 14px;
+      font-size: 18px;
 
       li {
         padding-top: 12px;
+        color: #FFFFFF;
+
+        a {
+          color: #FFFFFF;
+        }
       }
     }
 
     .information {
       display: flex;
       justify-content: space-between;
+      margin-top: 130px;
+      font-weight: 500;
+      font-size: 14px;
+      line-height: 15px;
+
+      a {
+        color: #FFFFFF;
+      }
     }
   }
 }
